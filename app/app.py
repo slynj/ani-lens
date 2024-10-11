@@ -1,11 +1,10 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from recommender import get_recommendations  # Import your recommendation logic
+from recommender import get_recommendations
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for cross-origin requests
+CORS(app)
 
-# Route for recommendation
 @app.route('/recommend', methods=['POST'])
 def recommend():
     data = request.json
