@@ -1,15 +1,21 @@
 {
-  "dependencies": {
-    "process": "^0.11.10"
-  },
   "name": "ani-lens",
   "version": "1.0.0",
+  "description": "",
   "main": "webpack.config.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nvm use 16 && react-scripts --openssl-legacy-provider start",
+    "build": "nvm use 16 && react-scripts --openssl-legacy-provider build",
+    "test": "nvm use 16 && react-scripts test",
+    "eject": "react-scripts eject"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "process": "^0.11.10"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "16"
+  }
 }
